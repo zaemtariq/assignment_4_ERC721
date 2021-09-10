@@ -31,7 +31,7 @@ contract PIAIC_ERC721 is Ownable, ERC721 {
     //set sale sale_time
     function setSaleTime() public onlyOwner{
         sale_start_date= block.timestamp;
-        sale_end_date = block.timestamp + 30;
+        sale_end_date = block.timestamp + (30 * 1 days );
     }
     
     //check sale_time
